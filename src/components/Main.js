@@ -6,17 +6,22 @@ const Main = () => {
   return (
     <main>
       <div className="wrapper">
-        <div className="hero-container">
+        <section className="hero-container">
           <div className="hero"></div>
-          <h1 className="hero-title">The Bright Future of Web 3.0?</h1>
-          <p className="hero-desc">
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <button className="hero-read-more-btn">Read more</button>
-        </div>
-        <div className="highlights-container">
+          <div className="hero-content">
+            <h1 className="hero-title">The Bright Future of Web 3.0?</h1>
+            <div className="desc">
+              <p className="hero-desc">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button className="hero-read-more-btn">Read more</button>
+            </div>
+          </div>
+        </section>
+
+        <section className="highlights-container">
           <h2 className="highlights-container-title">New</h2>
           <div className="single-highlight">
             <h3>Hydrogen VS Electric Cars</h3>
@@ -36,9 +41,9 @@ const Main = () => {
               what that means.
             </p>
           </div>
-        </div>
+        </section>
 
-        <div className="top-posts">
+        <section className="top-posts">
           <div className="single-post">
             <img src={computer} alt="" className="post-img" />
             <div className="post-info">
@@ -63,7 +68,7 @@ const Main = () => {
               <p>How the pandemic has sparked fresh opportunities.</p>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </main>
   );
