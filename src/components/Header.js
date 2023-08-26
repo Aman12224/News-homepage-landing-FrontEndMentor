@@ -2,14 +2,20 @@ import React from "react";
 import logo from "../assets/images/logo.svg";
 import bars from "../assets/images/icon-menu.svg";
 
-const Header = () => {
+const Header = ({ openSidebar }) => {
   return (
     <nav>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="logo" className="logo" />
           <button className="open-sidebar">
-            <img src={bars} alt="bars" />
+            <img
+              src={bars}
+              alt="bars"
+              onClick={() => {
+                openSidebar();
+              }}
+            />
           </button>
         </div>
         <div className="nav-links">
